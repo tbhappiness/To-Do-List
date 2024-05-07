@@ -1,0 +1,18 @@
+ <ul class="taskList">
+        {{#each tasks as |taskName|}}
+            <li class="taskItem">
+                <div class="content">{{taskName}}</div>
+                <div class="btn-Grp">
+                    <a href="/inc?taskName={{taskName}}">
+                        <button class="upBtn">⬆</button>
+                    </a>
+                    <a href="/dec?taskName={{taskName}}">
+                        <button class="downBtn">⬇</button>
+                    </a>
+                    <a href="/del?taskName={{taskName}}">
+                        <button class="delBtn">X</button>
+                    </a>
+                </div>
+            </li>
+        {{/each}}
+    </ul>

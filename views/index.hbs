@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .taskForm{
+            width: 70vw;
+            margin: 50px auto;
+        }
+        .taskInput{
+            display: inline-block;
+            width: 70%;
+            height: 30px;
+            font-size: 24px;
+        }
+        .taskList{
+            width: 70vw;
+            margin: 50px auto;
+
+        }
+        .taskBtn{
+            width: 20%;
+            height: 35px;
+            font-size: 24px;
+        }
+        .taskItem{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+        .content{
+            width: 70%;
+            height: 30px;
+            font-size: 26px;
+        }
+        .upBtn{
+            margin: 5px;
+        }
+        .downBtn{
+            margin: 5px;
+
+        }
+        .delBtn{
+            padding: 4px 5px 1px 5px;
+            margin: 5px;
+
+        }
+        li:first-child .upBtn,
+        li:last-child .downBtn{
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 align = "center">To-do List</h1>
+
+    {{>task_list_form}}
+
+   {{>taskList}}
+    
+</body>
+</html>
